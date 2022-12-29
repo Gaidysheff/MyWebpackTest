@@ -13,6 +13,6 @@ module.exports = {
   rules: {
     "no-unused-vars": "warn",
     semi: ["error", "always"],
-    quotes: ["error", "single"],
+    quotes: ["warn", "single"],
   },
 };
