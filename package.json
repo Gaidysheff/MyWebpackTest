@@ -4,7 +4,6 @@
   "description": "I want to test Webpack and various plugins & loaders.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
@@ -68,8 +67,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "test"
+      "pre-commit": "test",
+      "pre-push": "lint-staged"
     }
   },
   "lint-staged": {
