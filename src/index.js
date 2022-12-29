@@ -15,7 +15,6 @@ const post = new Post("Webpack Post Title", WebpackLogo);
 
 $("pre").html(post.toString());
 
-console.log("Hello world");
 console.log("JSON:", json);
 console.log("XML:", xml);
 console.log("CSV:", csv);
