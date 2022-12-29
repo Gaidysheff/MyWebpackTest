@@ -1,0 +1,25 @@
+@import "~normalize.css";
+
+@import "AmaticSC-Regular.css";
+
+body {
+  font-family: "AmaticSC Regular", sans-serif;
+}
+
+.container {
+  padding-top: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: brown;
+}
+
+h1 {
+  text-align: center;
+  color: blueviolet;
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+}

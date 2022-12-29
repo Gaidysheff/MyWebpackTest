@@ -1,0 +1,10 @@
+# Default
+.idea
+.vscode
+
+# Node
+node_modules
+
+# Dist & tests
+test
+dist
