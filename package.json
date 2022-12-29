@@ -4,6 +4,7 @@
   "description": "I want to test Webpack and various plugins & loaders.",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
@@ -34,6 +35,8 @@
     "css-minimizer-webpack-plugin": "^4.2.2",
     "csv-loader": "^3.0.5",
     "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-webpack-plugin": "^3.2.0",
     "file-loader": "^6.2.0",
@@ -43,6 +46,7 @@
     "less-loader": "^11.1.0",
     "lint-staged": "^13.1.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "prettier": "^2.8.1",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
@@ -64,7 +68,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
     }
   },
   "lint-staged": {
